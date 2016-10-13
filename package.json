@@ -1,14 +1,16 @@
 {
-  "name": "css_room",
+  "name": "blago_scroll",
   "version": "1.0.0",
   "description": "Let's try this crazy act",
   "author": "VetLee",
   "license": "ISC",
   "dependencies": {
-      "gulp": "^3.9.*"
-   },
+    "gulp": "^3.9.*",
+    "scrollmagic": "^2.0.5"
+  },
   "devDependencies": {
     "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^2.3.2",

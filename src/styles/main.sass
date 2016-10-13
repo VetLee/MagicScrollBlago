@@ -25,8 +25,11 @@ body
   position: fixed
   width: 100%
   color: white
-  transition: all 0.3s cubic-bezier(0.28, 0.11, 0.32, 1)
+  transition: all 0.4s cubic-bezier(0.28, 0.11, 0.32, 1)
   z-index: 30
+  &.white
+    background-color: rgba(255, 255, 255, 0.9)
+    color: #1f233a
   .container
     $height: 50px
     margin: auto
@@ -45,29 +48,26 @@ body
         padding: 0 25px
         line-height: $height
 
-#hero
+#iphone
   position: fixed
-  width: 100%
-  #background
-    width: calc(100% + 50px)
-    left: -25px
-    height: calc(100vh + 50px)
-    background-image: url('../img/bg.jpg')
-    background-position: 50% 15%
-    background-size: cover
-    transform: matrix(2, 0, 0, 2, 0, 0)
-    &.blur
-      filter: blur(8px) brightness(0.7)
-  #block-with-text
-    position: absolute
-    top: 35%
-    color: white
-    max-width: 710px
-    text-align: center
-    .title
-      font-size: 47px
-      font-weight: 400
-      margin-bottom: 30px
-    .text
-      font-size: 27px
-      font-weight: 300
+  #wallpapers
+    filter: blur(10px)
+    transform: scale(2)
+    img
+      width: 100%
+
+#block-with-text
+  position: relative
+  z-index: 10
+  color: white
+  max-width: 710px
+  text-align: center
+  margin: auto
+  padding-top: 35vh
+  .title
+    font-size: 47px
+    font-weight: 400
+    margin-bottom: 30px
+  .text
+    font-size: 27px
+    font-weight: 300

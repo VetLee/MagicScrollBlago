@@ -18,7 +18,7 @@ html
   padding: 0
 
 body
-  background-color: grey
+  background-color: #f0f0f0
   height: 660vh
 
 #header
@@ -34,7 +34,8 @@ body
     $height: 50px
     margin: auto
     height: $height
-    max-width: 1070px
+    padding: 0 20px
+    // max-width: 1070px
     border-bottom: 0.5px solid white
     font-size: 16px
     .logo
@@ -48,16 +49,69 @@ body
         padding: 0 25px
         line-height: $height
 
+.content
+  max-width: 1280px
+  margin: auto 2100px auto 0
+
 #pin1
   position: relative
   height: 100vh
   width: 100%
   background-color: #353b5f
+  .block-text
+    position: absolute
+    top: 228px
+    left: 43%
+    color: white
+    max-width: 480px
+    #title
+      margin-left: 20px
+      opacity: 0
+      font-size: 40px
+      font-weight: 300
+      margin-bottom: 35px
+    .point
+      opacity: 0
+      margin-bottom: 20px
+      margin-left: 20px
+    span.num
+      color: white
+      font-size: 27px
+      font-weight: 400
+      margin-right: 6px
+    span.text
+      font-size: 19px
+      font-weight: 300
+    #downloads
+      opacity: 0
+      margin-top: 90px
+      img
+        width: 118px
+        &:not(:last-child)
+          margin-right: 10px
+  #block-counter
+    opacity: 0
+    position: absolute
+    top: 740px
+    left: 30%
+    color: white
+    .counter
+      padding: 10px 50px
+      &:not(:last-child)
+        border-right: 1px solid rgba(255, 255, 255, 0.1)
+      .count
+        text-align: center
+        font-size: 27px
+        font-weight: 400
+        line-height: 55px
+      .text
+        font-size: 19px
+        font-weight: 300
   #iphone-wrap
     position: absolute
     width: 100%
     left: 0
-    top: 0%
+    margin-top: -100px
     #iphone
       position: absolute
       left: calc(50% - 314px)
